@@ -138,6 +138,15 @@ body {
   padding-bottom: 80px;
 }
 
+
+
+.main-container .overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  font-size: 15px;
+  gap: 30px;
+}
+
 @media screen and (min-width: 768px)
 {
   .ideas .container
@@ -146,19 +155,19 @@ body {
     width: 765px;
   }
 }
-.main-container .overview {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  font-size: 15px;
-  gap: 30px;
-}
-
 
 @media screen and (min-width: 992px)
 {
   .ideas .container
   {
     width: 990px;
+  }
+}
+@media screen and (min-width: 1200px)
+{
+  .ideas .container
+  {
+    width: 1150px;
   }
 }
 
@@ -182,9 +191,6 @@ body {
 
 .main-container .overview .ability {
   display: flex;
-
-  padding-left: 20px;
-  padding-right: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -470,9 +476,7 @@ body {
 @media screen and (min-width: 992px) {
   .about .container {
     width: 950px;
-  }
-  .about .container .content {
-    justify-content: center;
+    padding: 0px 100px;
   }
   .about .container .content .side p,
   .about .container .content .side h3 {
@@ -481,7 +485,6 @@ body {
   .about .container .content .side .image {
     display: flex;
     justify-content: start;
-    width: 100%;
     position: relative;
   }
 
